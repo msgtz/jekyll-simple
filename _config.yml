@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://msgtz.github.io" # the base hostname & protocol for your site
 twitter_username: storyge
 github_username:  msgtz
-encoding: "utf-8"
+encoding: utf-8
 
 # Build settings
 markdown: kramdown
