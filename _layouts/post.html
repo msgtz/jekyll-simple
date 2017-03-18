@@ -12,6 +12,12 @@ layout: default
     {{ page.content }}
   </div>
 
+  {% for tag in post.tags %}
+  <a href="{{"/tags/" | append: tag | prepend: site.baseurl }}">
+    <data data-icon="ei-tag"></data>
+    {{tag}}</a>
+  {% endfor %}
+  
   <footer class="article-footer">
 
   {% include share.html %}
