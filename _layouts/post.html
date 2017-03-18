@@ -10,13 +10,12 @@ layout: default
 
   <div class="article-content" itemprop="articleBody">
     {{ page.content }}
-  </div>
-  d
-  {% for tag in post.tags %}
-  <a href="{{"/tags/" | append: tag | prepend: site.baseurl }}">
-    <data data-icon="ei-tag"></data>
-    {{tag}}</a>
-  {% endfor %}
+    {% for tag in post.tags %}
+    <a href="{{"/tags/" | append: tag | prepend: site.baseurl }}">
+      <data data-icon="ei-tag"></data>
+      {{tag}}</a>
+    {% endfor %}
+  </div>  
 
   <footer class="article-footer">
 
