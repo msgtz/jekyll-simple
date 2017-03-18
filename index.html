@@ -39,6 +39,12 @@ title: Home
           {{category}}</a>
         {% endfor %}
 
+        {% for tag in post.tags %}
+        <a href="{{"/tags/" | append: tag | prepend: site.baseurl }}">
+          <data data-icon="ei-archive"></data>
+          {{tags}}</a>
+        {% endfor %}
+
 
 
         {% if post.author %}
