@@ -34,14 +34,14 @@ title: Home
         </span>
         {% endif %}
 
-        category:
+
         {% for category in post.categories %}
         <a href="{{"/category/" | append: category | prepend: site.baseurl }}">
           <data data-icon="ei-archive"></data>
           {{category}}</a>
         {% endfor %}
         <br />
-        tags:
+        
         {% for tag in post.tags %}
         <a href="{{"/tags/" | append: tag | prepend: site.baseurl }}">
           <data data-icon="ei-tag"></data>
