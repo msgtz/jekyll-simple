@@ -40,8 +40,8 @@ title: Home
           <data data-icon="ei-archive"></data>
           {{category}}</a>
         {% endfor %}
-
-        tags: 
+        <br />
+        tags:
         {% for tag in post.tags %}
         <a href="{{"/tags/" | append: tag | prepend: site.baseurl }}">
           <data data-icon="ei-archive"></data>
