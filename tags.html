@@ -1,16 +1,16 @@
 ---
 layout: default
-title: TagCloud
+title: Tags
 ---
 
 <div>
 
-  <h2>TagCloud</h2>
+  <h2>Tags</h2>
 
   <section class="archive_list">
     {% for tag in site.tags %}
 
-    <div class="category-name" label="{{ category | first }}">
+    <div class="category-name" label="{{ tag | first }}">
       <h2>{{ tag | first }}</h2>
     </div>
     {% for post in tag.last %}
