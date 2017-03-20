@@ -6,7 +6,7 @@ layout: default
   <header class="artilce_header">
     <h1 class="artilce_title" itemprop="name headline">{{ page.title }}</h1>
     {% for category in page.categories %}
-    <a href="{{"/category#" | append: category | prepend: site.baseurl }}">
+    <a href="{{"/archive#" | append: category | prepend: site.baseurl }}">
       <data data-icon="ei-archive"></data>
       {{category}}</a>
     {% endfor %}
