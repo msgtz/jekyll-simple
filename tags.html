@@ -10,7 +10,7 @@ title: Tags
   <section class="archive_list">
     {% for tag in site.tags %}
 
-    <div class="category-name" label="{{ tag | first }}">
+    <div class="category-name" id="{{ tag | first }}">
       <h2>{{ tag | first }}</h2>
     </div>
     {% for post in tag.last %}
