@@ -1,0 +1,32 @@
+---
+layout: default
+title: TagCloud
+---
+
+<div>
+
+  <h2>TagCloud</h2>
+
+  <section class="archive_list">
+    {% for tag in site.tags %}
+
+    <div class="category-name" label="{{ category | first }}">
+      <h2>{{ tag | first }}</h2>
+    </div>
+    {% for post in tag.last %}
+
+    <div class="post_title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+      <span class="date">{{ post.date | date: "%-d %b, %Y" }}</span>
+    </div>
+
+    {% endfor %}
+
+    {% endfor %}
+
+  </section>
+
+  <footer class="article-footer" mar>
+    {% include author.html %}
+  </footer>
+</div>
