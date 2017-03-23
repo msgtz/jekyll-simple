@@ -104,7 +104,7 @@ body {
     display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
     display: -ms-flexbox; /* IE 10 */
     display: -moz-flex; /* Firefox 18+ */
-    display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */// Import partials from `sass_dir` (defaults to `_sass`)
+    display: none; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */// Import partials from `sass_dir` (defaults to `_sass`)
 
 
     opacity: 0;
